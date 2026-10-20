@@ -7,7 +7,7 @@ public class LoginTest {
 
     private final Login login = new Login("Kyle", "Nook", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
 
-    // --- Part 1: Username Tests ---
+  
     @Test
     public void testUsernameCorrectlyFormatted() {
         assertTrue(login.checkUserName("kyl_1"));
@@ -18,7 +18,7 @@ public class LoginTest {
         assertFalse(login.checkUserName("kyle!!!!!!"));
     }
 
-    // --- Part 1: Password Tests ---
+     //Password Tests
     @Test
     public void testPasswordMeetsComplexity() {
         assertTrue(login.checkPasswordComplexity("Ch&&sec@ke99!"));
@@ -29,7 +29,7 @@ public class LoginTest {
         assertFalse(login.checkPasswordComplexity("password"));
     }
 
-    // --- Part 1: Cell Phone Tests ---
+    // Cell Phone Tests
     @Test
     public void testCellPhoneCorrectlyFormatted() {
         assertTrue(login.checkCellPhoneNumber("+27838968976"));
