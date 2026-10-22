@@ -40,7 +40,7 @@ public class LoginTest {
         assertFalse(login.checkCellPhoneNumber("08966553"));
     }
 
-    // --- Part 1: Login Authentication Tests ---
+    // Login Authentication Tests
     @Test
     public void testLoginSuccessful() {
         assertTrue(login.loginUser("kyl_1", "Ch&&sec@ke99!"));
@@ -65,7 +65,7 @@ public class LoginTest {
         assertEquals(expected, invalidUser.registerUser());
     }
 
-    // --- Part 2: Message & Recipient Unit Tests ---
+    // Message & Recipient Unit Tests 
     @Test
     public void testMessageLengthSuccess() {
         Message msg = new Message("+27718693002", "Hi Mike, can you join us for dinner tonight?");
