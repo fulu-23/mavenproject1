@@ -95,5 +95,6 @@ public class LoginTest {
     public void testMessageHashCreation() {
         Message msg = new Message("+27718693002", "Hi Mike, can you join us for dinner tonight?");
         assertNotNull(msg.createMessageHash(0));
+        
     }
 }
